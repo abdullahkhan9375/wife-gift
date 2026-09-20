@@ -6,7 +6,7 @@ The layout adapts to phones. The carousel supports swipes, arrow buttons, and ke
 
 ## Background music
 
-Place an MP3 that you have permission to publish at `assets/audio/our-song.mp3`, then set `audio: "assets/audio/our-song.mp3"` in `content.js`. A small fixed button appears once the file loads. It plays or mutes the looping track; the volume starts at 35%. Browsers may require a tap before they allow music to start.
+The audio-only track is `assets/audio/our-song.m4a`, extracted from the supplied video. The original MP4 remains local and is excluded from Git. A small fixed button appears once the audio loads. It plays or mutes the looping track; the volume starts at 35%. Browsers may require a tap before they allow music to start.
 
 ## Make it yours
 
