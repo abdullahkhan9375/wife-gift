@@ -1,16 +1,16 @@
 # Just for you
 
-A small, personal website with five photographs and a letter revealed by opening an envelope. It is a static site, so it can be hosted directly on GitHub Pages.
+A small, personal website with eight photographs and a letter revealed by opening an envelope. It is a static site, so it can be hosted directly on GitHub Pages.
 
 The layout adapts to phones. The carousel supports swipes, arrow buttons, and keyboard arrow keys; it does not advance automatically.
 
 ## Make it yours
 
-1. Add five photographs to `assets/photos/`. JPEG, PNG, and WebP files work. You can use any filenames; update the paths in `content.js` to match.
-2. In `content.js`, replace each memory's `title`, `description`, and `alt`. The `alt` field should briefly describe the photograph for someone who cannot see it.
+1. The eight numbered photographs are in `assets/photos/` as `01.jpeg` through `08.jpeg`. They appear in that order. To change a photo, replace its numbered file.
+2. In `content.js`, write your words in each numbered photo's `description` field, between the quotation marks. The `alt` field briefly describes the photograph for someone who cannot see it; adjust it if you change the image.
 3. Replace the `letter` entries with your own paragraphs. Each quoted entry becomes a separate paragraph. Adjust `opening` and `closing` if you wish. Keep the quotation marks and commas.
 
-The page shows a decorative placeholder when a photograph has not been added. Check all five slides before sharing the link.
+The page shows a decorative placeholder when a photograph has not been added. Check all eight slides before sharing the link.
 
 ## Preview locally
 

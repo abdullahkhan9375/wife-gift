@@ -30,6 +30,7 @@ function showMemory(index) {
 
   title.textContent = memory.title;
   description.textContent = memory.description;
+  description.hidden = !memory.description;
   photoIndex.textContent = `${String(activeIndex + 1).padStart(2, "0")} / ${String(memories.length).padStart(2, "0")}`;
   [...dots.children].forEach((dot, dotIndex) => {
     dot.setAttribute("aria-current", String(dotIndex === activeIndex));
