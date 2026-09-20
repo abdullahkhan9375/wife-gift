@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f6f1" />
+    <meta name="description" content="A quiet little collection of moments, made with love." />
+    <link rel="icon" href="assets/heart.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Libre+Caslon+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Just for you</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__eyebrow"><span class="tiny-heart" aria-hidden="true">♡</span> A LITTLE SPACE FOR US <span class="tiny-heart" aria-hidden="true">♡</span></div>
+        <h1 id="hero-title">The little moments,<br /><em>the whole world.</em></h1>
+        <p>Five memories, a few words, and all the love in between.</p>
+        <a class="scroll-cue" href="#memories" aria-label="Scroll to our memories">
+          <span>SCROLL TO BEGIN</span><span class="scroll-cue__line" aria-hidden="true"></span>
+        </a>
+        <span class="hero__corner hero__corner--left" aria-hidden="true">✳</span>
+        <span class="hero__corner hero__corner--right" aria-hidden="true">✳</span>
+      </section>
+
+      <section class="memories section-shell" id="memories" aria-labelledby="memories-title">
+        <div class="section-heading">
+          <span class="section-heading__kicker">01 / OUR MOMENTS</span>
+          <h2 id="memories-title">A collection of <em>us</em></h2>
+          <p>Some moments are too lovely to leave in the camera roll.</p>
+        </div>
+
+        <div class="carousel" aria-roledescription="carousel" aria-label="Our five memories">
+          <div class="carousel__layout">
+            <button class="carousel__arrow carousel__arrow--prev" id="previous" type="button" aria-label="Previous photograph">
+              <span aria-hidden="true">←</span>
+            </button>
+            <div class="photo-card">
+              <div class="photo-card__image-wrap" id="photo-wrap">
+                <img id="memory-image" alt="" hidden />
+                <div class="photo-card__placeholder" id="photo-placeholder" aria-hidden="true">
+                  <span class="photo-card__placeholder-heart">♡</span>
+                  <span>OUR MOMENT</span>
+                </div>
+              </div>
+              <div class="photo-card__footer">
+                <span class="photo-card__index" id="photo-index">01 / 05</span>
+                <span class="photo-card__mark" aria-hidden="true">♡</span>
+              </div>
+            </div>
+            <button class="carousel__arrow carousel__arrow--next" id="next" type="button" aria-label="Next photograph">
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div class="memory-caption" aria-live="polite" aria-atomic="true">
+            <h3 id="memory-title"></h3>
+            <p id="memory-description"></p>
+          </div>
+          <div class="carousel__dots" id="carousel-dots" aria-label="Choose a photograph"></div>
+        </div>
+      </section>
+
+      <div class="interlude" aria-hidden="true"><span></span><span>♡</span><span></span></div>
+
+      <section class="letter section-shell" id="letter" aria-labelledby="letter-title">
+        <div class="section-heading">
+          <span class="section-heading__kicker">02 / JUST FOR YOU</span>
+          <h2 id="letter-title">A note from <em>my heart</em></h2>
+          <p>There are a few things I wanted to say.</p>
+        </div>
+
+        <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="letter-paper" aria-label="Open your letter">
+          <span class="envelope__back"></span>
+          <span class="envelope__flap"></span>
+          <span class="envelope__front"></span>
+          <span class="envelope__seal" aria-hidden="true">♡</span>
+        </button>
+        <p class="envelope-instruction" id="envelope-instruction">TAP THE ENVELOPE TO OPEN</p>
+        <article class="letter-paper" id="letter-paper" hidden>
+          <span class="letter-paper__opening" id="letter-opening"></span>
+          <div id="letter-body"></div>
+          <span class="letter-paper__closing" id="letter-closing"></span>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer"><span>Made with all my love</span><span aria-hidden="true">♡</span></footer>
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
