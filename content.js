@@ -12,8 +12,11 @@ window.giftContent = {
     { image: "assets/photos/08.jpeg", alt: "A couple standing with luggage in a busy terminal.", title: "Photo 8", description: "Saddest day, iss din humein phir Allah Hafiz kehna para. Mujhay abhi tk yaad hai k mein apne ticket ko sahi kr raha tha and aap itne pyaar se mujhay dekh rahin thi. Mujhay apki look abhi tk yaad hai, I love you so much." },
   ],
   letter: [
-    "Your letter goes here. Each entry in this list becomes its own paragraph.",
+    "Thank you, Fizzi, for being a part of my life. When you came into my life, it was like I had a new purpose: to be a better person.",
+    "You are my motivation in the morning and at night. You are the reason I get excited to fly back to Pakistan and spend my time there with you.",
+    "When I'm feeling down and stressed, I think about your beautiful, smiling face, and it brightens up my day.",
+    "I treasure every moment we have spent together, and I look forward to spending the rest of my life with you.",
   ],
-  opening: "My love,",
-  closing: "Forever yours ♡",
+  opening: "Dear Fizzi,",
+  closing: "Your loving husband,\nAbdullah",
 };
