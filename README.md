@@ -2,6 +2,8 @@
 
 A small, personal website with five photographs and a letter revealed by opening an envelope. It is a static site, so it can be hosted directly on GitHub Pages.
 
+The layout adapts to phones. The carousel supports swipes, arrow buttons, and keyboard arrow keys; it does not advance automatically.
+
 ## Make it yours
 
 1. Add five photographs to `assets/photos/`. JPEG, PNG, and WebP files work. You can use any filenames; update the paths in `content.js` to match.
