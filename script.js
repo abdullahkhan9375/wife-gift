@@ -1,4 +1,4 @@
-const { memories, letter, opening, closing } = window.giftContent;
+const { memories, letter, opening, closing, audio } = window.giftContent;
 const image = document.querySelector("#memory-image");
 const placeholder = document.querySelector("#photo-placeholder");
 const photoIndex = document.querySelector("#photo-index");
@@ -85,3 +85,47 @@ envelope.addEventListener("click", () => {
 });
 
 showMemory(0);
+
+const music = document.querySelector("#background-music");
+const musicToggle = document.querySelector("#music-toggle");
+
+function updateMusicToggle() {
+  const audible = !music.paused && !music.muted;
+  const label = music.paused
+    ? "Play background music"
+    : audible ? "Mute background music" : "Unmute background music";
+  musicToggle.dataset.state = audible ? "playing" : "muted";
+  musicToggle.setAttribute("aria-label", label);
+  musicToggle.title = label;
+}
+
+if (audio) {
+  music.src = audio;
+  music.volume = 0.35;
+  music.addEventListener("canplay", () => {
+    musicToggle.hidden = false;
+    updateMusicToggle();
+    music.play().catch(() => {
+      // Browsers commonly wait for a tap before allowing sound.
+      updateMusicToggle();
+    });
+  }, { once: true });
+  music.addEventListener("error", () => { musicToggle.hidden = true; });
+  music.addEventListener("play", updateMusicToggle);
+  music.addEventListener("pause", updateMusicToggle);
+  music.addEventListener("volumechange", updateMusicToggle);
+  musicToggle.addEventListener("click", async () => {
+    if (music.paused) {
+      music.muted = false;
+      try {
+        await music.play();
+      } catch {
+        updateMusicToggle();
+      }
+    } else {
+      music.muted = !music.muted;
+    }
+    updateMusicToggle();
+  });
+  music.load();
+}

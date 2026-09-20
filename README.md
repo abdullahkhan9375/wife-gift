@@ -4,6 +4,10 @@ A small, personal website with eight photographs and a letter revealed by openin
 
 The layout adapts to phones. The carousel supports swipes, arrow buttons, and keyboard arrow keys; it does not advance automatically.
 
+## Background music
+
+Place an MP3 that you have permission to publish at `assets/audio/our-song.mp3`, then set `audio: "assets/audio/our-song.mp3"` in `content.js`. A small fixed button appears once the file loads. It plays or mutes the looping track; the volume starts at 35%. Browsers may require a tap before they allow music to start.
+
 ## Make it yours
 
 1. The eight numbered photographs are in `assets/photos/` as `01.jpeg` through `08.jpeg`. They appear in that order. To change a photo, replace its numbered file.

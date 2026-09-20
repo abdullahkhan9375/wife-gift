@@ -1,6 +1,8 @@
 // Each description belongs to the numbered photo beside it.
 // Add your own words between the quotation marks for each description.
 window.giftContent = {
+  // Add the path to an MP3 you have permission to publish, e.g. "assets/audio/our-song.mp3".
+  audio: "",
   memories: [
     { image: "assets/photos/01.jpeg", alt: "A couple standing together outdoors, dressed in black and burgundy.", title: "Photo 1", description: "This was the first time I wore the clothes after our shopping, itna acha lag raha tha mein, all thanks to you. Apka fashion taste bohat acha hai Fizzi. I loved my all black outfit. This was the day of your birthday and we both looked so good MashaAllah. I think this is my favourite picture of us together." },
     { image: "assets/photos/02.jpeg", alt: "A couple standing in front of tall wooden doors.", title: "Photo 2", description: "This was our first time at Dioro I think. Apko itni hassi arahi thi waiter ka accent sun k. Wo bichara impress krna cha raha tha and apki hassi nhi ruk rahi thi hayee. Drinks achay nhi thay but dessert bohat mazaydaar tha. I enjoyed spending time with you, phir apne bhaalu k saath bhi aik pic li thi." },
